@@ -2,6 +2,10 @@
 Indica si un número entero es primo (solo divisible entre 1 y él mismo).
 '''
 
+def pedirNumero():
+    numero = int(input("Número >> "))
+    return numero
+
 def numeroPrimo(numero):
     contador = 0
     if numero <= 1:
@@ -16,7 +20,7 @@ def numeroPrimo(numero):
             print("El número es primo")
 
 def main():
-    numero = int(input("Número >> "))
+    numero = pedirNumero()
     numeroPrimo(numero) 
 if __name__ == "__main__":
     main()

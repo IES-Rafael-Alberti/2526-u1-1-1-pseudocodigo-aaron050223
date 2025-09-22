@@ -2,11 +2,15 @@
 Solicita el nombre del usuario y muestra un saludo personalizado.
 '''
 
-def saludo(nombre):
+def pedirNombre():
+    nombre = input("Dime tu nombre >> ")
+    return nombre
+
+def saludar(nombre):
     print(f"¡Que pasa {nombre}, tu eres mi colega!")
 
 def main():
-    nombre = input("Dime tu nombre >> ")
-    saludo(nombre)
+    nombrePedido = pedirNombre()
+    saludar(nombrePedido)
 if __name__ == "__main__":
     main()
