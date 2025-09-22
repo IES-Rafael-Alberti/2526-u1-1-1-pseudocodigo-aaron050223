@@ -7,7 +7,7 @@ def quitarIVA(precio):
     print(f"El precio de {precio} € sin IVA es de {precioSinIva} €")
 
 def main():
-    precio = int(input("Precio con IVA >> "))
+    precio = float(input("Precio con IVA >> "))
     quitarIVA(precio)
 if __name__ == "__main__":
     main()

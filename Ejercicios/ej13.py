@@ -6,13 +6,13 @@ Calcula la suma de los n primeros enteros positivos usando la fórmula n(n+1)/2.
 
 def suma(numero):
     resultado = (numero * (numero + 1)) // 2
-    print(f'La suma de los {numero} primeros enteros positivos es: {resultado}')
+    print(f'La suma de los {numero} primeros enteros positivos es >> {resultado}')
 
 def main():
-    n = int(input('Introduce un número entero positivo: '))
-    if n < 1:
+    numero = int(input('Introduce un número entero positivo >> '))
+    if numero < 1:
         print('Por favor, introduce un número entero positivo mayor que 0.')
     else:
-        suma(n)
+        suma(numero)
 if __name__ == '__main__':
     main()
